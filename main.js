@@ -32,4 +32,23 @@ function calculaTempo(tempoObjetivo) {
     segundos %= 60;  //obtem o resto da divisão dos segundos
     minutos %= 60;   //obtem o resto da divisão dos minutos
     horas %= 24;    //obtem o resto da divisão das horas
+
+
+if (tempoFinal > 0){
+    return dias +"dias" + horas +"horas"+minutos +"minutos"+ segundos+"segundos"
+    }else{
+        return "PRASO ENCERRRADO!!!"
+    }
+{
+function atualizadocronometro(){
+    //laço de repetição para interagir com todos os objtivos
+    for (let 1= 0;i< contradores.length; i++){
+        contadores[i].textContent=calculaTempo(tempo[i]); //textcontent mostra na tela a meta
+    }
+}
+function comecaCronometro(){
+    atualizadocronometro();//chamando da função criada anteriormente dentro desta função
+    setInterval(atualizadocronometro,1000);//função que fez a contagem do tempoa cada seg.
+}
+comecaCronometro();//chamada da função que inicia o cronometro
 }
