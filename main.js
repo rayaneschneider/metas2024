@@ -32,4 +32,4 @@ function calculaTempo(tempoObjetivo) {
     segundos %= 60;  //obtem o resto da divisão dos segundos
     minutos %= 60;   //obtem o resto da divisão dos minutos
     horas %= 24;    //obtem o resto da divisão das horas
-
+}
